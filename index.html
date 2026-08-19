@@ -564,6 +564,7 @@
     .master-info p { font-size: 0.88rem; color: #4e4b48; line-height: 1.55; }
 
     /* ===== SERVICES TABS ===== */
+    #services { scroll-margin-top: 80px; }
     .services-tabs {
       display: flex;
       flex-wrap: wrap;
@@ -1073,7 +1074,7 @@
               <div class="hero-stat-label">Клиентов</div>
             </div>
             <div>
-              <div class="hero-stat-num">4</div>
+              <div class="hero-stat-num">3</div>
               <div class="hero-stat-label">Специалиста</div>
             </div>
           </div>
@@ -1132,7 +1133,7 @@
           </p>
           <p style="margin-top: 16px;">
             <strong style="color: var(--charcoal);">В студии принимают:</strong> косметолог, специалист по депиляции,
-            мастер ногтевого сервиса, массажист, стилист-визажист — всё в одном месте для вашего комфорта.
+            мастер ногтевого сервиса — всё в одном месте для вашего комфорта.
           </p>
         </div>
       </section>
@@ -1176,310 +1177,314 @@
               <p>Маникюр, педикюр, дизайн ногтей. Аккуратность и безупречный результат.</p>
             </div>
           </div>
-          <div class="master-card reveal reveal-delay-4">
-            <div class="master-img">
-              <div class="icon-placeholder"><i class="fas fa-hand-holding-heart"></i></div>
+        </div>
+      </section>
+
+      <!-- ===== SERVICES SECTION ===== -->
+      <section id="services">
+        <div class="section-header reveal">
+          <div class="section-label">Услуги</div>
+          <h2 class="section-title">Прайс-лист</h2>
+          <p class="section-desc">Выберите направление, чтобы увидеть полный перечень процедур и стоимость</p>
+        </div>
+
+        <div class="services-tabs reveal">
+          <button class="tab-btn active" data-tab="esthetic"><i class="fas fa-magic" style="margin-right:6px; font-size:0.8rem;"></i>Эстетическая</button>
+          <button class="tab-btn" data-tab="hardware"><i class="fas fa-bolt" style="margin-right:6px; font-size:0.8rem;"></i>Аппаратная</button>
+          <button class="tab-btn" data-tab="injection"><i class="fas fa-syringe" style="margin-right:6px; font-size:0.8rem;"></i>Инъекционная</button>
+          <button class="tab-btn" data-tab="epilation"><i class="fas fa-leaf" style="margin-right:6px; font-size:0.8rem;"></i>Эпиляция</button>
+        </div>
+
+        <div class="services-content reveal">
+          <!-- ЭСТЕТИЧЕСКАЯ -->
+          <div id="esthetic" class="service-category active-cat">
+            <div class="price-item">
+              <div>
+                <span class="price-name">Комбинированная чистка лица</span>
+              </div>
+              <span class="price-val">2 500 ₽</span>
             </div>
-            <div class="master-info">
-              <h3>Артур</h3>
-              <div class="title">Массажист</div>
-              <p>Классический, расслабляющий, лечебный массаж. Снятие напряжения и улучшение самочувствия.</p>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Уход «Сияй»</span>
+                <div class="price-desc">демакияж, массаж, маска, крем</div>
+              </div>
+              <span class="price-val">2 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Гликолиевый пилинг 40%</span>
+              </div>
+              <span class="price-val">1 700 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Миндальный пилинг 40%</span>
+              </div>
+              <span class="price-val">1 900 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Азелаиновый пилинг</span>
+              </div>
+              <span class="price-val">1 700 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Молочный пилинг</span>
+              </div>
+              <span class="price-val">1 600 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Пилинг Джеснера</span>
+              </div>
+              <span class="price-val">2 300 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Ретиноловый пилинг</span>
+              </div>
+              <span class="price-val">2 800 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Карбокситерапия CO₂</span>
+                <div class="price-desc">курс 10 процедур — 32 000 ₽</div>
+              </div>
+              <span class="price-val">3 500 ₽</span>
+            </div>
+          </div>
+
+          <!-- АППАРАТНАЯ -->
+          <div id="hardware" class="service-category">
+            <div class="price-item">
+              <div>
+                <span class="price-name">LPG-массаж (тело)</span>
+                <div class="price-desc">курс 10 — 13 000 ₽ · 15 — 18 000 ₽</div>
+              </div>
+              <span class="price-val">1 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Миостимуляция тела</span>
+                <div class="price-desc">курс 10 — 8 000 ₽</div>
+              </div>
+              <span class="price-val">900 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">LPG + миостимуляция (10+10)</span>
+              </div>
+              <span class="price-val">18 000 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Микротоки (лицо, шея, декольте)</span>
+                <div class="price-desc">курс 10 — 18 000 ₽</div>
+              </div>
+              <span class="price-val">2 000 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">RF-лифтинг лица (30 мин, 1 зона)</span>
+              </div>
+              <span class="price-val">1 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">RF-лифтинг тела (30 мин, 1 зона)</span>
+              </div>
+              <span class="price-val">1 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">УЗ-кавитация тела (30–40 мин)</span>
+              </div>
+              <span class="price-val">1 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Вакуум + RF (30 мин, 1 зона)</span>
+              </div>
+              <span class="price-val">1 700 ₽</span>
+            </div>
+          </div>
+
+          <!-- ИНЪЕКЦИОННАЯ -->
+          <div id="injection" class="service-category">
+            <div class="price-item">
+              <div>
+                <span class="price-name">Hyal 1.0 / Hyal 1.8</span>
+              </div>
+              <span class="price-val">6 000–6 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Glow / Acne / Renew / Hair</span>
+              </div>
+              <span class="price-val">5 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Biogel (серия)</span>
+              </div>
+              <span class="price-val">5 000–5 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Biogel PDRN eyes</span>
+              </div>
+              <span class="price-val">3 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Biogel «стройность»</span>
+              </div>
+              <span class="price-val">8 000 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">PRP плазмотерапия</span>
+                <div class="price-desc">1 пробирка, курс 3–5 процедур</div>
+              </div>
+              <span class="price-val">3 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Липолитики тело</span>
+                <div class="price-desc">коррекция локальных жировых отложений</div>
+              </div>
+              <span class="price-val">3 500 ₽</span>
+            </div>
+          </div>
+
+          <!-- ЭПИЛЯЦИЯ -->
+          <div id="epilation" class="service-category">
+            <div class="price-sub">Шугаринг / Воск</div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Глубокое бикини</span>
+              </div>
+              <span class="price-val">1 500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Среднее бикини</span>
+              </div>
+              <span class="price-val">1 000 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Классическое бикини</span>
+              </div>
+              <span class="price-val">800 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Ноги полностью</span>
+              </div>
+              <span class="price-val">1 600 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Голени</span>
+              </div>
+              <span class="price-val">800 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Бёдра</span>
+              </div>
+              <span class="price-val">800 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Подмышки</span>
+              </div>
+              <span class="price-val">500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Руки (полностью)</span>
+              </div>
+              <span class="price-val">1 000 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Руки до локтя</span>
+              </div>
+              <span class="price-val">900 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Усики</span>
+              </div>
+              <span class="price-val">500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Лицо (полностью)</span>
+              </div>
+              <span class="price-val">1 100 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Щёки / бакенбарды</span>
+              </div>
+              <span class="price-val">500 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Подбородок</span>
+              </div>
+              <span class="price-val">300 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Носовые проходы</span>
+              </div>
+              <span class="price-val">400 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Живот</span>
+              </div>
+              <span class="price-val">600 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Поясница</span>
+              </div>
+              <span class="price-val">600 ₽</span>
+            </div>
+            <div class="price-item">
+              <div>
+                <span class="price-name">Ягодицы</span>
+              </div>
+              <span class="price-val">500 ₽</span>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <div class="price-sub">Комплексы услуг</div>
+              <div class="price-complex">
+                <span class="price-name"><strong>Комплекс S</strong> — глубокое бикини + подмышки + голени</span>
+                <span class="price-val">2 500 ₽</span>
+              </div>
+              <div class="price-complex">
+                <span class="price-name"><strong>Комплекс M</strong> — глубокое бикини + подмышки + ноги полностью</span>
+                <span class="price-val">3 100 ₽</span>
+              </div>
+              <div class="gift-note">
+                <i class="fas fa-gift"></i>
+                <span>В подарок: холодный парафин для рук, полосочка на животе или пальчики на ногах/руках (на выбор).</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- END services-section -->
 
-<!-- ===== SERVICES TABS ===== -->
-<div class="services-tabs reveal">
-  <button class="tab-btn active" data-tab="esthetic"><i class="fas fa-magic" style="margin-right:6px; font-size:0.8rem;"></i>Эстетическая</button>
-  <button class="tab-btn" data-tab="hardware"><i class="fas fa-bolt" style="margin-right:6px; font-size:0.8rem;"></i>Аппаратная</button>
-  <button class="tab-btn" data-tab="injection"><i class="fas fa-syringe" style="margin-right:6px; font-size:0.8rem;"></i>Инъекционная</button>
-  <button class="tab-btn" data-tab="epilation"><i class="fas fa-leaf" style="margin-right:6px; font-size:0.8rem;"></i>Эпиляция</button>
-</div>
-
-<div class="services-content reveal">
-  <!-- ЭСТЕТИЧЕСКАЯ -->
-  <div id="esthetic" class="service-category active-cat">
-    <div class="price-item">
-      <div>
-        <span class="price-name">Комбинированная чистка лица</span>
-      </div>
-      <span class="price-val">2 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Уход «Сияй»</span>
-        <div class="price-desc">демакияж, массаж, маска, крем</div>
-      </div>
-      <span class="price-val">2 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Гликолиевый пилинг 40%</span>
-      </div>
-      <span class="price-val">1 700 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Миндальный пилинг 40%</span>
-      </div>
-      <span class="price-val">1 900 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Азелаиновый пилинг</span>
-      </div>
-      <span class="price-val">1 700 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Молочный пилинг</span>
-      </div>
-      <span class="price-val">1 600 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Пилинг Джеснера</span>
-      </div>
-      <span class="price-val">2 300 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Ретиноловый пилинг</span>
-      </div>
-      <span class="price-val">2 800 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Карбокситерапия CO₂</span>
-        <div class="price-desc">курс 10 процедур — 32 000 ₽</div>
-      </div>
-      <span class="price-val">3 500 ₽</span>
-    </div>
-  </div>
-
-  <!-- АППАРАТНАЯ -->
-  <div id="hardware" class="service-category">
-    <div class="price-item">
-      <div>
-        <span class="price-name">LPG-массаж (тело)</span>
-        <div class="price-desc">курс 10 — 13 000 ₽ · 15 — 18 000 ₽</div>
-      </div>
-      <span class="price-val">1 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Миостимуляция тела</span>
-        <div class="price-desc">курс 10 — 8 000 ₽</div>
-      </div>
-      <span class="price-val">900 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">LPG + миостимуляция (10+10)</span>
-      </div>
-      <span class="price-val">18 000 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Микротоки (лицо, шея, декольте)</span>
-        <div class="price-desc">курс 10 — 18 000 ₽</div>
-      </div>
-      <span class="price-val">2 000 ₽</span>
-    </div>
-    <!-- НОВЫЕ ПОЗИЦИИ -->
-    <div class="price-item">
-      <div>
-        <span class="price-name">RF-лифтинг лица (30 мин, 1 зона)</span>
-      </div>
-      <span class="price-val">1 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">RF-лифтинг тела (30 мин, 1 зона)</span>
-      </div>
-      <span class="price-val">1 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">УЗ-кавитация тела (30–40 мин)</span>
-      </div>
-      <span class="price-val">1 500 ₽</span>
-    </div>
-  </div>
-
-  <!-- ИНЪЕКЦИОННАЯ -->
-  <div id="injection" class="service-category">
-    <div class="price-item">
-      <div>
-        <span class="price-name">Hyal 1.0 / Hyal 1.8</span>
-      </div>
-      <span class="price-val">6 000–6 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Glow / Acne / Renew / Hair</span>
-      </div>
-      <span class="price-val">5 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Biogel (серия)</span>
-      </div>
-      <span class="price-val">5 000–5 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Biogel PDRN eyes</span>
-      </div>
-      <span class="price-val">3 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Biogel «стройность»</span>
-      </div>
-      <span class="price-val">8 000 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">PRP плазмотерапия</span>
-        <div class="price-desc">1 пробирка, курс 3–5 процедур</div>
-      </div>
-      <span class="price-val">3 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Липолитики тело</span>
-        <div class="price-desc">коррекция локальных жировых отложений</div>
-      </div>
-      <span class="price-val">3 500 ₽</span>
-    </div>
-  </div>
-
-  <!-- ЭПИЛЯЦИЯ -->
-  <div id="epilation" class="service-category">
-    <div class="price-sub">Шугаринг / Воск</div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Глубокое бикини</span>
-      </div>
-      <span class="price-val">1 500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Среднее бикини</span>
-      </div>
-      <span class="price-val">1 000 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Классическое бикини</span>
-      </div>
-      <span class="price-val">800 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Ноги полностью</span>
-      </div>
-      <span class="price-val">1 600 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Голени</span>
-      </div>
-      <span class="price-val">800 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Бёдра</span>
-      </div>
-      <span class="price-val">800 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Подмышки</span>
-      </div>
-      <span class="price-val">500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Руки (полностью)</span>
-      </div>
-      <span class="price-val">1 000 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Руки до локтя</span>
-      </div>
-      <span class="price-val">900 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Усики</span>
-      </div>
-      <span class="price-val">500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Лицо (полностью)</span>
-      </div>
-      <span class="price-val">1 100 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Щёки / бакенбарды</span>
-      </div>
-      <span class="price-val">500 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Подбородок</span>
-      </div>
-      <span class="price-val">300 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Носовые проходы</span>
-      </div>
-      <span class="price-val">400 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Живот</span>
-      </div>
-      <span class="price-val">600 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Поясница</span>
-      </div>
-      <span class="price-val">600 ₽</span>
-    </div>
-    <div class="price-item">
-      <div>
-        <span class="price-name">Ягодицы</span>
-      </div>
-      <span class="price-val">500 ₽</span>
-    </div>
-
-    <div style="margin-top: 24px;">
-      <div class="price-sub">Комплексы услуг</div>
-      <div class="price-complex">
-        <span class="price-name"><strong>Комплекс S</strong> — глубокое бикини + подмышки + голени</span>
-        <span class="price-val">2 500 ₽</span>
-      </div>
-      <div class="price-complex">
-        <span class="price-name"><strong>Комплекс M</strong> — глубокое бикини + подмышки + ноги полностью</span>
-        <span class="price-val">3 100 ₽</span>
-      </div>
-      <div class="gift-note">
-        <i class="fas fa-gift"></i>
-        <span>В подарок: холодный парафин для рук, полосочка на животе или пальчики на ногах/руках (на выбор).</span>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END services-content -->
       <!-- MAP -->
       <section id="map">
         <div class="container">
@@ -1577,7 +1582,7 @@
               <div style="color:#666; font-size:0.72rem;">Эстетическая косметология</div>
             </div>
           </div>
-          <p>Профессиональный уход за кожей, аппаратная и инъекционная косметология, депиляция, ногтевой сервис и массаж в одном месте.</p>
+          <p>Профессиональный уход за кожей, аппаратная и инъекционная косметология, депиляция, ногтевой сервис в одном месте.</p>
         </div>
         <div class="footer-col">
           <h4>Навигация</h4>
