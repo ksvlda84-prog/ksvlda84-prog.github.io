@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -805,6 +804,69 @@
     }
     .round-btn:hover .btn-tooltip { opacity: 1; transform: translateX(0); }
 
+    /* ===== КАРУСЕЛЬ ФОТО (SCROLL-SNAP) ===== */
+    .studio-gallery {
+      margin-top: 48px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .gallery-track {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding-bottom: 16px;
+    }
+    .gallery-track::-webkit-scrollbar {
+      display: none;
+    }
+    .gallery-item {
+      flex: 0 0 85%;
+      max-width: 600px;
+      scroll-snap-align: center;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .gallery-item { flex: 0 0 45%; }
+      .gallery-item img { height: 400px; }
+    }
+
+    /* ===== COOKIE ВСПЛЫВАЮЩИЙ БЛОК ===== */
+    .cookie-banner {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      max-width: 380px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--gray-light);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transform: translateY(150%);
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .cookie-banner.show { transform: translateY(0); }
+    .cookie-banner p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; }
+    .cookie-btn {
+      background: var(--charcoal); color: white; border: none; padding: 10px 20px;
+      border-radius: 40px; font-weight: 600; font-size: 0.85rem; cursor: pointer;
+      transition: 0.2s; align-self: flex-start;
+    }
+    .cookie-btn:hover { background: var(--pink-dark); color: var(--charcoal); }
+
     /* ===== MODAL ===== */
     .modal {
       display: none;
@@ -923,6 +985,8 @@
       .round-btn { width: 50px; height: 50px; font-size: 1.35rem; border-radius: 50%; }
       .round-btn .btn-tooltip { display: none; }
       .scroll-top { bottom: 82px; right: 16px; width: 40px; height: 40px; font-size: 0.9rem; }
+      
+      .cookie-banner { bottom: 16px; left: 16px; right: 16px; max-width: none; padding-right: 80px; }
     }
 
     /* ===== RESPONSIVE: SMALL PHONES ===== */
@@ -1057,7 +1121,7 @@
           </div>
           <h2>Красота,<br/><span class="accent">которая вдохновляет</span></h2>
           <p class="hero-sub">
-            Сертифицированный косметолог, руководитель студии. Работаем на профессиональном
+            Сертифицированный специалист, руководитель студии. Работаем на профессиональном
             оборудовании с качественными препаратами. Безопасность и эффективность — наш приоритет.
           </p>
           <div class="hero-buttons">
@@ -1128,16 +1192,26 @@
         </div>
         <div style="max-width: 720px; margin: 0 auto; text-align: center; font-size: 1.05rem; line-height: 1.7; color: #4e4b48;" class="reveal">
           <p>
-            Меня зовут Виктория, я сертифицированный косметолог и руководитель студии.
+            Меня зовут Виктория, я сертифицированный специалист и руководитель студии.
             Мы работаем на оборудовании премиум-класса, используем проверенные методики и качественные препараты.
           </p>
           <p style="margin-top: 16px;">
-            <strong style="color: var(--charcoal);">В студии принимают:</strong> косметолог, специалист по депиляции,
+            <strong style="color: var(--charcoal);">В студии принимают:</strong> специалист по эстетике лица и тела, специалист по депиляции,
             мастер ногтевого сервиса — всё в одном месте для вашего комфорта.
           </p>
         </div>
-      </section>
 
+        <!-- Карусель фото студии -->
+<!-- Карусель фото студии -->
+        <div class="studio-gallery reveal">
+          <div class="gallery-track">
+            <div class="gallery-item"><img src="1.jpg" alt="Интерьер студии 1" loading="lazy"></div>
+            <div class="gallery-item"><img src="2.jpg" alt="Интерьер студии 2" loading="lazy"></div>
+            <div class="gallery-item"><img src="3.jpg" alt="Интерьер студии 3" loading="lazy"></div>
+            <div class="gallery-item"><img src="4.jpg" alt="Интерьер студии 4" loading="lazy"></div>
+            <div class="gallery-item"><img src="5.jpg" alt="Интерьер студии 5" loading="lazy"></div>
+          </div>
+        </div>
       <!-- MASTERS -->
       <section id="masters" class="masters-section">
         <div class="section-header reveal">
@@ -1153,8 +1227,8 @@
             </div>
             <div class="master-info">
               <h3>Виктория Рассохина</h3>
-              <div class="title">Косметолог</div>
-              <p>Сертифицированный специалист по инъекционным и аппаратным методикам.</p>
+              <div class="title">Специалист по эстетике лица и тела</div>
+              <p>Сертифицированный специалист по аппаратным и эстетическим методикам.</p>
             </div>
           </div>
           <div class="master-card reveal reveal-delay-2">
@@ -1191,7 +1265,6 @@
         <div class="services-tabs reveal">
           <button class="tab-btn active" data-tab="esthetic"><i class="fas fa-magic" style="margin-right:6px; font-size:0.8rem;"></i>Эстетическая</button>
           <button class="tab-btn" data-tab="hardware"><i class="fas fa-bolt" style="margin-right:6px; font-size:0.8rem;"></i>Аппаратная</button>
-          <button class="tab-btn" data-tab="injection"><i class="fas fa-syringe" style="margin-right:6px; font-size:0.8rem;"></i>Инъекционная</button>
           <button class="tab-btn" data-tab="epilation"><i class="fas fa-leaf" style="margin-right:6px; font-size:0.8rem;"></i>Эпиляция</button>
         </div>
 
@@ -1261,9 +1334,9 @@
             <div class="price-item">
               <div>
                 <span class="price-name">LPG-массаж (тело)</span>
-                <div class="price-desc">курс 10 — 13 000 ₽ · 15 — 18 000 ₽</div>
+                <div class="price-desc">курс 10 — 15 000 ₽ · курс 15 — 22 000 ₽</div>
               </div>
-              <span class="price-val">1 500 ₽</span>
+              <span class="price-val">1 700 ₽</span>
             </div>
             <div class="price-item">
               <div>
@@ -1274,9 +1347,9 @@
             </div>
             <div class="price-item">
               <div>
-                <span class="price-name">LPG + миостимуляция (10+10)</span>
+                <span class="price-name">LPG + миостимуляция</span>
               </div>
-              <span class="price-val">18 000 ₽</span>
+              <span class="price-val">22 000 ₽</span>
             </div>
             <div class="price-item">
               <div>
@@ -1299,63 +1372,9 @@
             </div>
             <div class="price-item">
               <div>
-                <span class="price-name">УЗ-кавитация тела (30–40 мин)</span>
-              </div>
-              <span class="price-val">1 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
                 <span class="price-name">Вакуум + RF (30 мин, 1 зона)</span>
               </div>
               <span class="price-val">1 700 ₽</span>
-            </div>
-          </div>
-
-          <!-- ИНЪЕКЦИОННАЯ -->
-          <div id="injection" class="service-category">
-            <div class="price-item">
-              <div>
-                <span class="price-name">Hyal 1.0 / Hyal 1.8</span>
-              </div>
-              <span class="price-val">6 000–6 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">Glow / Acne / Renew / Hair</span>
-              </div>
-              <span class="price-val">5 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">Biogel (серия)</span>
-              </div>
-              <span class="price-val">5 000–5 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">Biogel PDRN eyes</span>
-              </div>
-              <span class="price-val">3 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">Biogel «стройность»</span>
-              </div>
-              <span class="price-val">8 000 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">PRP плазмотерапия</span>
-                <div class="price-desc">1 пробирка, курс 3–5 процедур</div>
-              </div>
-              <span class="price-val">3 500 ₽</span>
-            </div>
-            <div class="price-item">
-              <div>
-                <span class="price-name">Липолитики тело</span>
-                <div class="price-desc">коррекция локальных жировых отложений</div>
-              </div>
-              <span class="price-val">3 500 ₽</span>
             </div>
           </div>
 
@@ -1582,7 +1601,7 @@
               <div style="color:#666; font-size:0.72rem;">Эстетическая косметология</div>
             </div>
           </div>
-          <p>Профессиональный уход за кожей, аппаратная и инъекционная косметология, депиляция, ногтевой сервис в одном месте.</p>
+          <p>Профессиональный уход за кожей, аппаратная косметология, депиляция, ногтевой сервис в одном месте.</p>
         </div>
         <div class="footer-col">
           <h4>Навигация</h4>
@@ -1600,7 +1619,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        © 2025 Студия Виктории Рассохиной. Все права защищены.
+        <p>© 2026 Студия Виктории Рассохиной. Все права защищены.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem; color: #555;"></p>
       </div>
     </div>
   </footer>
@@ -1625,6 +1645,12 @@
   <button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">
     <i class="fas fa-chevron-up"></i>
   </button>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Мы используем файлы cookie для улучшения работы сайта и аналитики. Продолжая использовать сайт, вы соглашаетесь с нашей политикой.</p>
+    <button class="cookie-btn" id="acceptCookiesBtn">Согласен</button>
+  </div>
 
   <script>
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -1690,6 +1716,23 @@
     if (contactSection) stickyObserver.observe(contactSection);
     if (footerEl) stickyObserver.observe(footerEl);
     stickyButtons.style.transition = 'opacity 0.3s';
+
+    // ===== ЛОГИКА ПЛАШКИ COOKIES =====
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptCookiesBtn = document.getElementById('acceptCookiesBtn');
+
+    if (!localStorage.getItem('cookiesAccepted')) {
+      setTimeout(() => {
+        if (cookieBanner) cookieBanner.classList.add('show');
+      }, 1500);
+    }
+
+    if (acceptCookiesBtn) {
+      acceptCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.classList.remove('show');
+      });
+    }
   </script>
 </body>
 </html>
