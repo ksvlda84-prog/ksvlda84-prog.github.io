@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Комбинированная чистка лица",
+    "desc": "",
+    "price": "2 500 ₽",
+    "icon": "fa-wand-magic-sparkles"
+  },
+  {
+    "id": 2,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Программа «Detox очищение»",
+    "desc": "Комбинированная чистка + карбокситерапия",
+    "price": "5 000 ₽",
+    "icon": "fa-leaf"
+  },
+  {
+    "id": 3,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Гликолиевый пилинг 40%",
+    "desc": "Обновление и выравнивание рельефа кожи",
+    "price": "1 700 ₽",
+    "icon": "fa-droplet"
+  },
+  {
+    "id": 4,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Миндальный пилинг 40%",
+    "desc": "Мягкое очищение и сияние для чувствительной кожи",
+    "price": "1 900 ₽",
+    "icon": "fa-droplet"
+  },
+  {
+    "id": 5,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Азелаиновый пилинг",
+    "desc": "Противовоспалительный и себорегулирующий эффект",
+    "price": "1 700 ₽",
+    "icon": "fa-droplet"
+  },
+  {
+    "id": 6,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Молочный пилинг",
+    "desc": "Глубокое увлажнение и деликатное обновление",
+    "price": "1 600 ₽",
+    "icon": "fa-droplet"
+  },
+  {
+    "id": 7,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Пилинг Джеснера",
+    "desc": "Интенсивное обновление, борьба с постакне и пигментацией",
+    "price": "2 300 ₽",
+    "icon": "fa-wand-magic-sparkles"
+  },
+  {
+    "id": 8,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Ретиноловый пилинг",
+    "desc": "Мощный anti-age эффект и стимуляция коллагена",
+    "price": "2 800 ₽",
+    "icon": "fa-star"
+  },
+  {
+    "id": 9,
+    "category": "esthetic",
+    "type": "item",
+    "name": "Карбокситерапия CO₂",
+    "desc": "курс 10 процедур — 32 000 ₽",
+    "price": "3 500 ₽",
+    "icon": "fa-wind"
+  },
+  {
+    "id": 10,
+    "category": "spa",
+    "type": "item",
+    "name": "Программа «Нейролифтинг» (60 мин)",
+    "desc": "Направлена на расслабление нервной системы в сочетании с лифтинговыми методиками. (Демакияж, микротоки, массаж, сыворотка, маска)",
+    "price": "6 000 ₽",
+    "icon": "fa-spa"
+  },
+  {
+    "id": 11,
+    "category": "spa",
+    "type": "item",
+    "name": "Программа «Шелковое преображение» (60 мин)",
+    "desc": "Глубокое увлажнение и питание кожи. Процедура «на выход». (Демакияж, гидрирование, УЗ-пилинг, массаж, сыворотка, маска, крем)",
+    "price": "6 000 ₽",
+    "icon": "fa-feather"
+  },
+  {
+    "id": 12,
+    "category": "spa",
+    "type": "item",
+    "name": "Программа «Коллагеновый лифтинг» (60 мин)",
+    "desc": "Увлажнение, выработка собственного коллагена и укрепление каркаса. (Демакияж, RF-лифтинг, массаж, сыворотка, маска, крем)",
+    "price": "6 000 ₽",
+    "icon": "fa-gem"
+  },
+  {
+    "id": 13,
+    "category": "spa",
+    "type": "item",
+    "name": "Программа «Calm and Clear» (90 мин)",
+    "desc": "Для кожи с высыпаниями: снятие воспаления, себорегуляция и восстановление защитного барьера. (Демакияж, тонизация, дезинкрустация, массаж по Жакке, сыворотка, маска, крем)",
+    "price": "6 000 ₽",
+    "icon": "fa-shield-heart"
+  },
+  {
+    "id": 14,
+    "category": "spa",
+    "type": "item",
+    "name": "Программа «Карбокси-Реновация» (60 мин)",
+    "desc": "Экспресс-омоложение, устранение следов усталости, осветление и выравнивание тона. (Демакияж, неинвазивная карбокситерапия, тонизация, сыворотка, маска, крем)",
+    "price": "6 000 ₽",
+    "icon": "fa-sun"
+  },
+  {
+    "id": 15,
+    "category": "hardware",
+    "type": "item",
+    "name": "LPG-массаж (тело)",
+    "desc": "курс 10 — 15 000 ₽ · курс 15 — 22 000 ₽",
+    "price": "1 700 ₽",
+    "icon": "fa-bolt"
+  },
+  {
+    "id": 16,
+    "category": "hardware",
+    "type": "item",
+    "name": "Миостимуляция тела",
+    "desc": "курс 10 — 8 000 ₽",
+    "price": "900 ₽",
+    "icon": "fa-wave-square"
+  },
+  {
+    "id": 17,
+    "category": "hardware",
+    "type": "item",
+    "name": "LPG + миостимуляция",
+    "desc": "Комплексный курс коррекции фигуры",
+    "price": "22 000 ₽",
+    "icon": "fa-fire"
+  },
+  {
+    "id": 18,
+    "category": "hardware",
+    "type": "item",
+    "name": "Микротоки (лицо, шея, декольте)",
+    "desc": "курс 10 — 18 000 ₽",
+    "price": "2 000 ₽",
+    "icon": "fa-wand-magic"
+  },
+  {
+    "id": 19,
+    "category": "hardware",
+    "type": "item",
+    "name": "RF-лифтинг лица (30 мин, 1 зона)",
+    "desc": "Безоперационная подтяжка и уплотнение кожи",
+    "price": "1 500 ₽",
+    "icon": "fa-face-smile-beam"
+  },
+  {
+    "id": 20,
+    "category": "hardware",
+    "type": "item",
+    "name": "RF-лифтинг тела (30 мин, 1 зона)",
+    "desc": "Повышение тонуса и упругости кожи тела",
+    "price": "1 500 ₽",
+    "icon": "fa-hand-sparkles"
+  },
+  {
+    "id": 21,
+    "category": "hardware",
+    "type": "item",
+    "name": "Вакуум + RF (30 мин, 1 зона)",
+    "desc": "Интенсивная проработка проблемных зон",
+    "price": "1 700 ₽",
+    "icon": "fa-water"
+  },
+  {
+    "id": 22,
+    "category": "body",
+    "type": "item",
+    "name": "Программа «Силуэт»",
+    "desc": "10 сеансов",
+    "price": "17 000 ₽",
+    "icon": "fa-person-rays"
+  },
+  {
+    "id": 23,
+    "category": "body",
+    "type": "item",
+    "name": "Программа «Лифтинг и упругость»",
+    "desc": "8 сеансов RF, 5 сеансов LPG",
+    "price": "20 000 ₽",
+    "icon": "fa-heart-pulse"
+  },
+  {
+    "id": 24,
+    "category": "body",
+    "type": "item",
+    "name": "Программа «Антицеллюлитный форсаж»",
+    "desc": "10 сеансов LPG, 5 сеансов вакуум + RF",
+    "price": "23 000 ₽",
+    "icon": "fa-fire-flame-curved"
+  },
+  {
+    "id": 25,
+    "category": "body",
+    "type": "item",
+    "name": "Программа «Тонус-Энерджи»",
+    "desc": "10 сеансов миостимуляции, 5 сеансов LPG",
+    "price": "16 500 ₽",
+    "icon": "fa-battery-full"
+  },
+  {
+    "id": 26,
+    "category": "epilation",
+    "type": "subheader",
+    "name": "Шугаринг / Воск",
+    "desc": "",
+    "price": "",
+    "icon": ""
+  },
+  {
+    "id": 27,
+    "category": "epilation",
+    "type": "item",
+    "name": "Глубокое бикини",
+    "desc": "",
+    "price": "1 500 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 28,
+    "category": "epilation",
+    "type": "item",
+    "name": "Среднее бикини",
+    "desc": "",
+    "price": "1 000 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 29,
+    "category": "epilation",
+    "type": "item",
+    "name": "Классическое бикини",
+    "desc": "",
+    "price": "800 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 30,
+    "category": "epilation",
+    "type": "item",
+    "name": "Ноги полностью",
+    "desc": "",
+    "price": "1 600 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 31,
+    "category": "epilation",
+    "type": "item",
+    "name": "Голени / Бёдра",
+    "desc": "",
+    "price": "800 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 32,
+    "category": "epilation",
+    "type": "item",
+    "name": "Подмышки",
+    "desc": "",
+    "price": "500 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 33,
+    "category": "epilation",
+    "type": "item",
+    "name": "Руки (полностью)",
+    "desc": "",
+    "price": "1 000 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 34,
+    "category": "epilation",
+    "type": "item",
+    "name": "Руки до локтя",
+    "desc": "",
+    "price": "900 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 35,
+    "category": "epilation",
+    "type": "item",
+    "name": "Усики / Щеки",
+    "desc": "",
+    "price": "500 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 36,
+    "category": "epilation",
+    "type": "item",
+    "name": "Лицо (полностью)",
+    "desc": "",
+    "price": "1 100 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 37,
+    "category": "epilation",
+    "type": "item",
+    "name": "Живот / Поясница",
+    "desc": "",
+    "price": "600 ₽",
+    "icon": "fa-feather-pointed"
+  },
+  {
+    "id": 38,
+    "category": "epilation",
+    "type": "subheader",
+    "name": "Комплексы услуг",
+    "desc": "",
+    "price": "",
+    "icon": ""
+  },
+  {
+    "id": 39,
+    "category": "epilation",
+    "type": "complex",
+    "name": "Комплекс S — глубокое бикини + подмышки + голени",
+    "desc": "Выгодный комплекс депиляции",
+    "price": "2 500 ₽",
+    "icon": "fa-star"
+  },
+  {
+    "id": 40,
+    "category": "epilation",
+    "type": "complex",
+    "name": "Комплекс M — глубокое бикини + подмышки + ноги полностью",
+    "desc": "Максимальная гладкость",
+    "price": "3 100 ₽",
+    "icon": "fa-crown"
+  },
+  {
+    "id": 41,
+    "category": "epilation",
+    "type": "gift",
+    "name": "В подарок: холодный парафин для рук, полосочка на животе или пальчики на ногах/руках (на выбор).",
+    "desc": "",
+    "price": "",
+    "icon": "fa-gift"
+  }
+]
