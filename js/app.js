@@ -32,6 +32,7 @@
     name: ['названиеуслуги', 'название', 'услуга', 'наименование', 'name'],
     desc: ['описаниедетали', 'описание', 'детали', 'desc', 'description'],
     price: ['цена', 'стоимость', 'price'],
+    oldPrice: ['стараяценазачеркнутая', 'стараяцена', 'было', 'oldprice', 'ценадоскидки'],
     icon: ['иконкаfontawesome', 'иконка', 'icon']
   };
 
@@ -135,6 +136,7 @@
         category, type, name,
         desc: clean(get('desc')),
         price,
+        oldPrice: price ? formatPrice(get('oldPrice')) : '',
         icon: normalizeIcon(get('icon'))
       });
     });
@@ -183,7 +185,18 @@
         text.appendChild(el('span', 'price-name', item.name));
         if (item.desc) text.appendChild(el('div', 'price-desc', item.desc));
         card.append(ic, text);
-        if (item.price) card.appendChild(el('span', 'price-val', item.price));
+        if (item.price) {
+          const val = el('span', 'price-val');
+          if (item.oldPrice) {
+            val.classList.add('has-old');
+            const old = el('s', 'price-old', item.oldPrice);
+            old.append(el('span', 'sr-only', ' (прежняя цена)'));
+            val.append(old, el('span', 'price-now', item.price));
+          } else {
+            val.textContent = item.price;
+          }
+          card.appendChild(val);
+        }
         box.appendChild(card);
       }
     });
